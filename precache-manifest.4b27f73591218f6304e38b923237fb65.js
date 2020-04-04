@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a9adb87edde7535f0c3d166128784a3",
+    "revision": "0f46450fe2e92303232b8b5e124b5025",
     "url": "/alex-react-gh-page/index.html"
   },
   {
-    "revision": "6ab9196aa6c321135fde",
+    "revision": "53a56660df3e994d72e4",
     "url": "/alex-react-gh-page/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "036a3d12b0ed0074341c",
-    "url": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js"
+    "revision": "b727e96548c41fbd133f",
+    "url": "/alex-react-gh-page/static/js/2.9ebe2717.chunk.js"
   },
   {
     "revision": "f231859d6585c4cd5f80c344783ed269",
-    "url": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js.LICENSE.txt"
+    "url": "/alex-react-gh-page/static/js/2.9ebe2717.chunk.js.LICENSE.txt"
   },
   {
     "revision": "577942f65240e59e7315",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alex-react-gh-page/static/js/4.03435195.chunk.js"
   },
   {
-    "revision": "6ab9196aa6c321135fde",
-    "url": "/alex-react-gh-page/static/js/main.c1d55494.chunk.js"
+    "revision": "53a56660df3e994d72e4",
+    "url": "/alex-react-gh-page/static/js/main.8c6dbc35.chunk.js"
   },
   {
     "revision": "c78d63ce73aca67fb940",

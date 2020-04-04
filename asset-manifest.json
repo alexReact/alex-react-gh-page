@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/alex-react-gh-page/static/css/main.523f09c5.chunk.css",
-    "main.js": "/alex-react-gh-page/static/js/main.b00209c1.chunk.js",
-    "main.js.map": "/alex-react-gh-page/static/js/main.b00209c1.chunk.js.map",
-    "runtime-main.js": "/alex-react-gh-page/static/js/runtime-main.175a0e8b.js",
-    "runtime-main.js.map": "/alex-react-gh-page/static/js/runtime-main.175a0e8b.js.map",
-    "static/js/2.59532696.chunk.js": "/alex-react-gh-page/static/js/2.59532696.chunk.js",
-    "static/js/2.59532696.chunk.js.map": "/alex-react-gh-page/static/js/2.59532696.chunk.js.map",
+    "main.css": "/alex-react-gh-page/static/css/main.69eda509.chunk.css",
+    "main.js": "/alex-react-gh-page/static/js/main.ab0aa60a.chunk.js",
+    "main.js.map": "/alex-react-gh-page/static/js/main.ab0aa60a.chunk.js.map",
+    "runtime-main.js": "/alex-react-gh-page/static/js/runtime-main.e9d31610.js",
+    "runtime-main.js.map": "/alex-react-gh-page/static/js/runtime-main.e9d31610.js.map",
+    "static/js/2.0f28f6ef.chunk.js": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js",
+    "static/js/2.0f28f6ef.chunk.js.map": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js.map",
+    "static/js/3.131f282e.chunk.js": "/alex-react-gh-page/static/js/3.131f282e.chunk.js",
+    "static/js/3.131f282e.chunk.js.map": "/alex-react-gh-page/static/js/3.131f282e.chunk.js.map",
+    "static/js/4.03435195.chunk.js": "/alex-react-gh-page/static/js/4.03435195.chunk.js",
+    "static/js/4.03435195.chunk.js.map": "/alex-react-gh-page/static/js/4.03435195.chunk.js.map",
     "index.html": "/alex-react-gh-page/index.html",
-    "precache-manifest.9a87c01527f3d15e861ef141472bc556.js": "/alex-react-gh-page/precache-manifest.9a87c01527f3d15e861ef141472bc556.js",
+    "precache-manifest.fc2c46254a7a51aeb29bf0d2e4d275d2.js": "/alex-react-gh-page/precache-manifest.fc2c46254a7a51aeb29bf0d2e4d275d2.js",
     "service-worker.js": "/alex-react-gh-page/service-worker.js",
-    "static/css/main.523f09c5.chunk.css.map": "/alex-react-gh-page/static/css/main.523f09c5.chunk.css.map",
-    "static/js/2.59532696.chunk.js.LICENSE.txt": "/alex-react-gh-page/static/js/2.59532696.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/alex-react-gh-page/static/media/logo.ee7cd8ed.svg"
+    "static/css/main.69eda509.chunk.css.map": "/alex-react-gh-page/static/css/main.69eda509.chunk.css.map",
+    "static/js/2.0f28f6ef.chunk.js.LICENSE.txt": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.175a0e8b.js",
-    "static/js/2.59532696.chunk.js",
-    "static/css/main.523f09c5.chunk.css",
-    "static/js/main.b00209c1.chunk.js"
+    "static/js/runtime-main.e9d31610.js",
+    "static/js/2.0f28f6ef.chunk.js",
+    "static/css/main.69eda509.chunk.css",
+    "static/js/main.ab0aa60a.chunk.js"
   ]
 }

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/alex-react-gh-page/static/css/main.69eda509.chunk.css",
-    "main.js": "/alex-react-gh-page/static/js/main.ab0aa60a.chunk.js",
-    "main.js.map": "/alex-react-gh-page/static/js/main.ab0aa60a.chunk.js.map",
+    "main.js": "/alex-react-gh-page/static/js/main.c1d55494.chunk.js",
+    "main.js.map": "/alex-react-gh-page/static/js/main.c1d55494.chunk.js.map",
     "runtime-main.js": "/alex-react-gh-page/static/js/runtime-main.e9d31610.js",
     "runtime-main.js.map": "/alex-react-gh-page/static/js/runtime-main.e9d31610.js.map",
     "static/js/2.0f28f6ef.chunk.js": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/4.03435195.chunk.js": "/alex-react-gh-page/static/js/4.03435195.chunk.js",
     "static/js/4.03435195.chunk.js.map": "/alex-react-gh-page/static/js/4.03435195.chunk.js.map",
     "index.html": "/alex-react-gh-page/index.html",
-    "precache-manifest.fc2c46254a7a51aeb29bf0d2e4d275d2.js": "/alex-react-gh-page/precache-manifest.fc2c46254a7a51aeb29bf0d2e4d275d2.js",
+    "precache-manifest.a925998c316509b448f0323850ebea0e.js": "/alex-react-gh-page/precache-manifest.a925998c316509b448f0323850ebea0e.js",
     "service-worker.js": "/alex-react-gh-page/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/alex-react-gh-page/static/css/main.69eda509.chunk.css.map",
     "static/js/2.0f28f6ef.chunk.js.LICENSE.txt": "/alex-react-gh-page/static/js/2.0f28f6ef.chunk.js.LICENSE.txt"
@@ -21,6 +21,6 @@
     "static/js/runtime-main.e9d31610.js",
     "static/js/2.0f28f6ef.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.ab0aa60a.chunk.js"
+    "static/js/main.c1d55494.chunk.js"
   ]
 }

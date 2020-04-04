@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "21e5e71662f539c61ac8c19279508735",
+    "revision": "6a9adb87edde7535f0c3d166128784a3",
     "url": "/alex-react-gh-page/index.html"
   },
   {
-    "revision": "b477f333785e1d7062f1",
+    "revision": "6ab9196aa6c321135fde",
     "url": "/alex-react-gh-page/static/css/main.69eda509.chunk.css"
   },
   {
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alex-react-gh-page/static/js/4.03435195.chunk.js"
   },
   {
-    "revision": "b477f333785e1d7062f1",
-    "url": "/alex-react-gh-page/static/js/main.ab0aa60a.chunk.js"
+    "revision": "6ab9196aa6c321135fde",
+    "url": "/alex-react-gh-page/static/js/main.c1d55494.chunk.js"
   },
   {
     "revision": "c78d63ce73aca67fb940",

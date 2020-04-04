@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "445b205105747f8c15f1754b77463695",
+    "revision": "c835444bca5000ba98e4df0d9674dc6e",
     "url": "/alex-react-gh-page/index.html"
   },
   {
-    "revision": "008e478eb8097e3bc8a7",
-    "url": "/alex-react-gh-page/static/css/main.5f361e03.chunk.css"
+    "revision": "cf510c02d39e73eab6da",
+    "url": "/alex-react-gh-page/static/css/main.523f09c5.chunk.css"
   },
   {
     "revision": "81d9229396f3704119be",
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/alex-react-gh-page/static/js/2.59532696.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "008e478eb8097e3bc8a7",
-    "url": "/alex-react-gh-page/static/js/main.c0d79e1d.chunk.js"
+    "revision": "cf510c02d39e73eab6da",
+    "url": "/alex-react-gh-page/static/js/main.b00209c1.chunk.js"
   },
   {
     "revision": "fde0b4944ab9886a6cc6",
     "url": "/alex-react-gh-page/static/js/runtime-main.175a0e8b.js"
   },
   {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/alex-react-gh-page/static/media/logo.5d5d9eef.svg"
+    "revision": "ee7cd8ed2dcec943251eb2763684fc6f",
+    "url": "/alex-react-gh-page/static/media/logo.ee7cd8ed.svg"
   }
 ]);

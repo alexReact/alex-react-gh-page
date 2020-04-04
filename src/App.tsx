@@ -1,24 +1,45 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { Suspense } from "react";
+import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+
+const Main = React.lazy(() => import("./pages/Main/Main"));
+const About = React.lazy(() => import("./pages/About/About"));
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <div className="App-header">
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                exact={true}
+                className="Menu-link"
+                activeClassName="Menu-link-active"
+              >
+                Main
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/aboute"
+                className="Menu-link"
+                activeClassName="Menu-link-active"
+              >
+                About
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="App-mainContent">
+          <Suspense fallback={null}>
+            <Switch>
+              <Route path="/aboute" component={About} />
+              <Route path="/" component={Main} />
+            </Switch>
+          </Suspense>
+        </div>
+      </BrowserRouter>
     </div>
   );
 }

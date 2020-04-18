@@ -5,7 +5,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 
-export const Anagram = () => {
+const Anagram = () => {
   const [inputVal, setInputVal] = useState<string>("finder");
   const [inputVal2, setInputVal2] = useState<string>("Friend");
   const [result, setResult] = useState<string>("Friend");
@@ -57,3 +57,5 @@ export const Anagram = () => {
     </div>
   );
 };
+
+export default Anagram;

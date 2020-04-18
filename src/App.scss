@@ -1,5 +1,22 @@
 @import "./assets/styles/globalBootstrap.scss";
 
-.App-mainContent {
-  padding-top: 56px;
+$widthSideMenu: 230px;
+
+.App {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &-sideMenu {
+    border: 1px solid #000;
+    position: fixed;
+    width: $widthSideMenu;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &-mainContent {
+    border: 1px solid #000;
+    margin-left: $widthSideMenu;
+  }
 }

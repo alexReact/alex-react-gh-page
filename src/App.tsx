@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { Switch, Route, HashRouter, Link } from "react-router-dom";
+import { Header } from "./pages/common/Header/Header";
 
 const Main = lazy(() => import("./pages/Main/Main"));
 const About = lazy(() => import("./pages/About/About"));
@@ -9,29 +10,11 @@ function App() {
   return (
     <div className="App">
       <HashRouter basename="/">
-        <div className="App-header">
-          <ul>
-            <li>
-              <Link to="/" className="Menu-link">
-                Main
-              </Link>
-            </li>
-            <li>
-              <Link to="/english" className="Menu-link">
-                English
-              </Link>
-            </li>
-            <li>
-              <Link to="/aboute" className="Menu-link">
-                About
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <Header />
         <div className="App-mainContent">
           <Suspense fallback={null}>
             <Switch>
-              <Route path="/aboute" component={About} />
+              <Route path="/about" component={About} />
               <Route path="/english" component={English} />
               <Route path="/" component={Main} />
             </Switch>

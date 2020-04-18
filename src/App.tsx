@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
-import { Switch, Route, HashRouter, Link } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import { Header } from "./pages/common/Header/Header";
+import "./App.scss";
 
 const Main = lazy(() => import("./pages/Main/Main"));
 const About = lazy(() => import("./pages/About/About"));
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <HashRouter basename="/">
         <Header />
+
         <div className="App-mainContent">
           <Suspense fallback={null}>
             <Switch>

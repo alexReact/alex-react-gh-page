@@ -6,7 +6,10 @@ interface ISearchFormProps {
 
 export const SearchForm: React.FC<ISearchFormProps> = () => {
   return (
-    <form className="form-inline my-2 my-lg-0">
+    <form
+      className="form-inline my-2 my-lg-0"
+      onSubmit={(e) => e.preventDefault()}
+    >
       <input
         className="form-control mr-sm-2"
         type="search"

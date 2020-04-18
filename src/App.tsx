@@ -1,33 +1,30 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Switch, Route, NavLink } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { Switch, Route, HashRouter, Link } from "react-router-dom";
 
-const Main = React.lazy(() => import("./pages/Main/Main"));
-const About = React.lazy(() => import("./pages/About/About"));
+const Main = lazy(() => import("./pages/Main/Main"));
+const About = lazy(() => import("./pages/About/About"));
+const English = lazy(() => import("./pages/English/English"));
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter basename="/">
         <div className="App-header">
           <ul>
             <li>
-              <NavLink
-                to="/"
-                exact={true}
-                className="Menu-link"
-                activeClassName="Menu-link-active"
-              >
+              <Link to="/" className="Menu-link">
                 Main
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink
-                to="/aboute"
-                className="Menu-link"
-                activeClassName="Menu-link-active"
-              >
+              <Link to="/english" className="Menu-link">
+                English
+              </Link>
+            </li>
+            <li>
+              <Link to="/aboute" className="Menu-link">
                 About
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
@@ -35,11 +32,12 @@ function App() {
           <Suspense fallback={null}>
             <Switch>
               <Route path="/aboute" component={About} />
+              <Route path="/english" component={English} />
               <Route path="/" component={Main} />
             </Switch>
           </Suspense>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

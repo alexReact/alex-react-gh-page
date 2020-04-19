@@ -21,7 +21,7 @@ function App() {
           <Suspense fallback={null}>
             <Switch>
               <Route path="/about" component={About} />
-              <Route path="/functions" component={FunctionsPage} />
+              <Route path="/functions" exact component={FunctionsPage} />
               <Route path="/functions/anagram" component={Anagram} />
               <Route path="/english" component={English} />
               <Route path="/" component={Main} />

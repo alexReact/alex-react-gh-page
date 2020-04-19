@@ -9,12 +9,12 @@ export const CODE_OBG = {
         code: `
         const anagram = (string1: string, string2: string) => {
           const str1: Array<string> = string1
-            .replace(/[^w]/g, "")
+            .replace(/[^\w]/g, "")
             .toLowerCase()
             .split("");
             
           const str2: Array<string> = string2
-            .replace(/[^w]/g, "")
+            .replace(/[^\w]/g, "")
             .toLowerCase()
             .split("");
         
@@ -37,12 +37,12 @@ export const CODE_OBG = {
         code: `
         function anagram(str1 = "finder", str2 = "Friend") {
           str1 = str1
-            .replace(/[^w]/g, "")
+            .replace(/[^\w]/g, "")
             .toLowerCase()
             .split("");
         
           str2 = str2
-            .replace(/[^w]/g, "")
+            .replace(/[^\w]/g, "")
             .toLowerCase()
             .split("");
         

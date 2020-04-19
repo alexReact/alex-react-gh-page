@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { reactCode, vanilla } from "./code";
+import { CODE_OBG } from "./code";
 import { Tabs } from "../common/Tabs/Tabs";
 
 const Anagram = () => {
@@ -38,12 +38,8 @@ const Anagram = () => {
   return (
     <div className="Anagram">
       <h3>Anagram</h3>
-      <p>
-        Нужно написать функцию, которая проверяет, являются ли две строки
-        анаграммами, причем регистр букв не имеет значения. Учитываются лишь
-        символы; пробелы или знаки препинания в расчет не берутся. finder and
-        Friend
-      </p>
+      <p>{CODE_OBG.anagram.question}</p>
+
       <input
         type="text"
         name="first"
@@ -64,7 +60,8 @@ const Anagram = () => {
       >
         {!showCode ? "Show code" : "Hide code"}
       </button>
-      {showCode && <Tabs react={reactCode} js={vanilla} />}
+
+      {showCode && <Tabs code={CODE_OBG.anagram.code} />}
     </div>
   );
 };

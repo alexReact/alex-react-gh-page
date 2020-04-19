@@ -4,38 +4,42 @@ interface ITabsProps {
   [key: string]: any;
 }
 
-export const Tabs: React.FC<ITabsProps> = ({ react, js }) => {
-  const [activeTab, setActiveTab] = useState<string>("react");
+export const Tabs: React.FC<ITabsProps> = ({ code }) => {
+  const [activeTab, setActiveTab] = useState<string>(code[0].title);
   return (
     <>
       <ul className="nav nav-tabs">
-        <li className="nav-item" onClick={() => setActiveTab("react")}>
-          <span className={`nav-link ${activeTab === "react" ? "active" : ""}`}>
-            React
-          </span>
-        </li>
-        <li className="nav-item" onClick={() => setActiveTab("js")}>
-          <span className={`nav-link ${activeTab === "js" ? "active" : ""}`}>
-            Vanilla JS
-          </span>
-        </li>
+        {code.map(({ title }: any, i: number) => {
+          return (
+            <li
+              key={i}
+              className="nav-item"
+              onClick={() => setActiveTab(title)}
+            >
+              <span
+                className={`nav-link ${activeTab === title ? "active" : ""}`}
+              >
+                {title}
+              </span>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="tab-content" id="myTabContent">
-        <div
-          className={`tab-pane fade ${
-            activeTab === "react" ? "show active" : ""
-          }`}
-          role="tabpanel"
-        >
-          <pre>{react}</pre>
-        </div>
-        <div
-          className={`tab-pane fade ${activeTab === "js" ? "show active" : ""}`}
-          role="tabpanel"
-        >
-          <pre>{js}</pre>
-        </div>
+        {code.map(({ code, title }: any, i: number) => {
+          return (
+            <div
+              key={i}
+              className={`tab-pane fade ${
+                activeTab === title ? "show active" : ""
+              }`}
+              role="tabpanel"
+            >
+              <pre>{code}</pre>
+            </div>
+          );
+        })}
       </div>
     </>
   );

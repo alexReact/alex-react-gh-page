@@ -31,7 +31,7 @@ export const Tabs: React.FC<ITabsProps> = ({ react, js }) => {
           <pre>{react}</pre>
         </div>
         <div
-          className={`${activeTab === "js" ? "show active" : ""}`}
+          className={`tab-pane fade ${activeTab === "js" ? "show active" : ""}`}
           role="tabpanel"
         >
           <pre>{js}</pre>

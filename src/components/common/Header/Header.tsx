@@ -13,20 +13,16 @@ export const Header = () => {
     setActiveMenu(window.location.hash.split("/"));
   }, [reload]);
 
-  console.log(activeMenu);
   return (
     <nav className="nav flex-column">
       {mainMenu.map(({ link, title, subMenu }) => {
         const actMenu = `/${activeMenu[1]}` === link ? "text-dark" : "";
 
         return (
-          <Link
-            to={link}
-            key={link}
-            className={`nav-link ${actMenu}`}
-            onClick={() => setReload(!reload)}
-          >
-            {title}
+          <div key={link} onClick={() => setReload(!reload)}>
+            <Link to={link} key={link} className={`nav-link ${actMenu}`}>
+              {title}
+            </Link>
             {Array.isArray(subMenu) &&
               `/${activeMenu[1]}` === link &&
               subMenu?.map(({ link, title }) => {
@@ -45,7 +41,7 @@ export const Header = () => {
                   </Link>
                 );
               })}
-          </Link>
+          </div>
         );
       })}
     </nav>

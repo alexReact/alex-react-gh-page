@@ -1,0 +1,2 @@
+(this["webpackJsonpgh-page-alex-react"]=this["webpackJsonpgh-page-alex-react"]||[]).push([[5],{32:function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return u}));var a=n(0),r=n.n(a);function u(){return r.a.createElement("div",null,"About")}}}]);
+//# sourceMappingURL=5.5604fd1e.chunk.js.map

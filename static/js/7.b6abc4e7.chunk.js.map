@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/Main/Main.tsx"],"names":["Main"],"mappings":"+HAAA,mEAEe,SAASA,IACtB,OAAO","file":"static/js/7.b6abc4e7.chunk.js","sourcesContent":["import React from \"react\";\r\n\r\nexport default function Main() {\r\n  return <div>Main</div>;\r\n}\r\n"],"sourceRoot":""}

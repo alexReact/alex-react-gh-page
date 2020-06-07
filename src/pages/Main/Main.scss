@@ -1,40 +1,27 @@
 .Main {
-  .inputWrap {
-    display: flex;
-    align-items: center;
-
-    label {
-      display: flex;
-      flex-direction: column;
-      margin: 16px;
-
-      input {
-        max-width: 100px;
-      }
-
-      .search {
-        min-width: 200px;
-      }
-    }
-
-    .amount {
-      font-size: 22px;
-    }
+  .cursPoint {
+    cursor: pointer;
   }
+  // .inputWrap {
+  //   display: flex;
+  //   align-items: center;
 
-  .patientWrap {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
+  //   label {
+  //     display: flex;
+  //     flex-direction: column;
+  //     margin: 16px;
 
-    ul {
-      margin: 0;
-      padding: 0;
-    }
+  //     input {
+  //       max-width: 100px;
+  //     }
 
-    li {
-      list-style-type: none;
-      margin-bottom: 8px;
-    }
-  }
+  //     .search {
+  //       min-width: 200px;
+  //     }
+  //   }
+
+  //   .amount {
+  //     font-size: 22px;
+  //   }
+  // }
 }

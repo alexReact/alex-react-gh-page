@@ -13,9 +13,9 @@ function App() {
   return (
     <HashRouter basename="/">
       <div className="App">
-        <div className="App-sideMenu bg-light">
+        {/* <div className="App-sideMenu bg-light">
           <Header />
-        </div>
+        </div> */}
 
         <div className="App-mainContent">
           <Suspense fallback={null}>

@@ -1,9 +1,5 @@
 import { list } from "./model";
 
-export function byField(field: string) {
-  return (a: any, b: any) => (a[field] > b[field] ? 1 : -1);
-}
-
 export let listPatient: {
   id: number;
   name: string;

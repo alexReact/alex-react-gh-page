@@ -9,13 +9,17 @@ export default function Main() {
   const [staticList, setStaticList] = useState<Array<IListItem>>([]);
   const [pacientList, setPacientList] = useState<Array<IListItem>>([]);
   const [minAge, setMinAge] = useState<string>("0");
-  const [maxAge, setMaxAge] = useState<string>("100");
-  const [sortBy, setSortBy] = useState<string>("age");
+  const [maxAge, setMaxAge] = useState<string>("120");
 
   useEffect(() => {
     setPacientList(listPatient);
     setStaticList(listPatient);
   }, []);
+
+  const resetAgeRange = () => {
+    setMinAge('0')
+    setMaxAge('120')
+  }
 
   return (
     <div className="Main container-fluid">
@@ -40,16 +44,17 @@ export default function Main() {
           aria-label="To"
           className="form-control"
         />
+         <div className="input-group-prepend">
+          <button className='btn btn-danger' onClick={resetAgeRange}>Сброс</button>
+        </div>
       </div>
 
       <div className="row">
         <div className="col-6">
         <TablePatient 
            pacientList={pacientList}
-           setSortBy={setSortBy}
            minAge={minAge}
            maxAge={maxAge}
-           sortBy={sortBy}
         />
         </div>
 

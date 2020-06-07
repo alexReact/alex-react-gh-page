@@ -1,23 +1,41 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
 import { IListItem } from "./interfaces";
-import { byField } from "./utils";
 
 interface ItablePatientProps {
   pacientList: Array<IListItem>,
-  setSortBy: (sortBy: string) => void, 
   minAge: string,
   maxAge: string,
-  sortBy: string,
   [key: string]: any;
 }
 
 export const TablePatient: React.FC<ItablePatientProps> = ({
   pacientList,
-  setSortBy,
   minAge,
   maxAge,
-  sortBy,
 }) => {
+  const [sortBy, setSortBy] = useState<string>("age");
+  const [toggleSort, setToggleSort] = useState<boolean>(false);
+
+  useEffect(() => {
+    byField()
+  }, [byField, toggleSort])
+
+  function byField() {
+    if(toggleSort) {
+      return (a: any, b: any) => (a[sortBy] > b[sortBy] ? -1 : 1);
+    }else {
+      return (a: any, b: any) => (a[sortBy] > b[sortBy] ? 1 : -1);
+
+    }
+  }
+
+  const sort = (field: string) => {
+    setSortBy(field);
+
+    setToggleSort(!toggleSort);
+  }
+  
   return (
     <table className="table">
       <thead>
@@ -25,22 +43,23 @@ export const TablePatient: React.FC<ItablePatientProps> = ({
           <th scope="col">#</th>
           <th
             scope="col"
-            onClick={() => setSortBy("name")}
-            className="cursPoint"
+            onClick={() => sort("name")}
+            className={`cursPoint text-${sortBy !== 'name' ? "secondary" : "dark"}`}
           >
-            ФИО
+            ФИО 
+             
           </th>
           <th
             scope="col"
-            onClick={() => setSortBy("age")}
-            className="cursPoint"
+            onClick={() => sort("age")}
+            className={`cursPoint text-${sortBy !== 'age' ? "secondary" : "dark"}`}
           >
             Возраст
           </th>
           <th
             scope="col"
-            onClick={() => setSortBy("sex")}
-            className="cursPoint"
+            onClick={() => sort("sex")}
+            className={`cursPoint text-${sortBy !== 'sex' ? "secondary" : "dark"}`}
           >
             Пол
           </th>
@@ -49,7 +68,7 @@ export const TablePatient: React.FC<ItablePatientProps> = ({
       <tbody>
         {pacientList
           .filter((item) => item.age >= +minAge && item.age <= +maxAge)
-          .sort(byField(sortBy))
+          .sort(byField())
           .map((item, i) => {
             return (
               <tr key={item.id}>
